@@ -1,0 +1,387 @@
+body{
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: Roboto;
+}
+a{
+    font-family: Source Sans Pro;
+}
+a.learn_link{
+    color: #F89939;
+    text-decoration: none;
+}
+
+.bottomTop{
+    height: 40px;
+    width: 40px;
+    background: #000;
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+    display: grid;
+    place-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.navbar ul li a{
+    margin-right: 25px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #000!important;
+    transition: .6s;
+}
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: #F89939;
+    transition: .6s;
+}
+.navbar ul li:hover::before{
+    width: 70%;
+}
+.navbar ul li:hover a{
+    color: #F89939!important;
+}
+.icon_right span{
+    font-size: 22px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+.icon_right span:first-child{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0 6px;
+}
+
+/* end header */
+
+.main_container{
+    padding-top: 80px;
+}
+
+h2{
+   font-size: 32px;
+   font-weight: 400;
+   line-height: 35px;
+   position: relative;
+}
+h2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #F89939;
+    width: 2px;
+}
+
+/* housing_market */
+
+.housing_market, .metro_market{
+    padding-top: 100px;
+}
+
+.forecate_rate{
+    padding-top: 150px;
+    padding-left: 150px;
+}
+
+
+/* right section */
+.box{
+    height: 250px;
+    width: 100%;
+    background: lightgray;
+    display: grid;
+    place-items: center;
+}
+
+.card img{
+    position: relative;
+}
+.industry_views{
+    position: absolute;
+    right: 25px;
+    bottom: 80px;
+    color: #fff;
+    opacity: 80%;
+}
+.cardbox p{
+    font-size: 13px;
+    position: relative;
+}
+.cardbox p::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: #F89939;
+}
+
+
+
+/* metros */
+.metros{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.metros p{
+    font-size: 14px;
+}
+.box-2{
+    box-shadow: 5px 5px 20px lightgray, -5px -5px 20px lightgray;
+    padding: 25px;
+    border-radius: 15px;
+}
+.metros .good{
+    color: #7CC576;
+    position: relative;
+}
+.metros .good::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    right: 0;
+    top: 5px;
+    background: gray;
+}
+.metros .danger{
+    color: #F26C4F;
+    position: relative;
+}
+.metros .danger::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    right: 0;
+    top: 5px;
+    background: gray;
+}
+
+.box-2-child .boxspan{
+    position: relative;
+}
+.box-2 .boxspan2{
+    position: relative;
+}
+.box-2 .boxspan2::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    width: 100px;
+    height: 1px;
+    background: #fff;
+    border: 1px dotted #F89939;
+}
+.box-2-child .boxspan::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    width: 150px;
+    height: 1px;
+    background: #fff;
+    border: 1px dotted #F89939;
+}
+
+
+/* electronic */
+.economic{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.elecBox{
+    height: 248px;
+    box-shadow: 5px 5px 20px lightgray, -5px -5px 20px lightgray;
+}
+.elecBox .elecTop{
+    background: #6DCFF6;
+    height: 40%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.elecTop h5{
+    color: #fff;
+    font-weight: 400;
+}
+.elecBottom h6{
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: auto;
+    background: lightgray;
+}
+
+
+/* latest_post */
+
+.latest_post{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.card-footer {
+    border: none;
+    background: none;
+}
+.card-footer ul li{
+    list-style: none;
+    margin-right: 10px;
+}
+.card-footer ul li a{
+    color: #3C3C3C;
+}
+
+/* opinion */
+.opinion{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+a.yellowa_btn{
+    background: #F89939;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 25px;
+}
+
+
+.solutions{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.solutions h2{
+    width: 600px;
+    margin: auto;
+}
+.risk-box{
+    box-shadow: 5px 5px 20px lightgray, -5px -5px 20px lightgray;
+    padding: 20px;
+}
+.risk-box h4{
+    color: #3C3C3C;
+}
+.risk-box p{
+    font-size: 12px;
+    line-height: 26px;
+    text-align: left;
+    color: #626262;
+    letter-spacing: 0.5px;
+}
+.risk-box .image{
+  background: lightgray;
+  border-radius: 50%;
+  width: 86px;
+  margin: auto;
+  padding: 15px;
+  line-height: 15px;
+}
+.border_bottom{
+    height: 1px;
+    width: 100%;
+    margin: auto;
+    background: #C4C4C4;
+}
+
+
+/* contact */
+.contact{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.contact h3{
+    width: 600px;
+    margin: auto;
+    font-size: 22px;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+}
+
+.about{
+    width: 320px;
+    margin: auto;
+    margin-top: 100px;
+}
+.contact p{
+    width: 600px;
+    margin: auto;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* contact_us */
+
+.contact_us{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background: #F8F8F8;
+}
+.contact_us h2{
+    width: 200px;
+    margin: auto;
+}
+.form-group{
+    position: relative;
+}
+.contact_us span{
+    position: absolute;
+    left: 15px;
+    top: 35px;
+    color: #F89939;
+}
+
+button.yellowa_btn{
+    background: #F89939;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 25px;
+    border: none;
+    font-weight: 600;
+}
+
+
+footer{
+    padding-top: 80px;
+    padding-bottom: 10px;
+    background: #000;
+}
+footer .col-lg-3{
+    border-right: 1px solid gray;
+}
+footer .form-group input{
+    border: none;
+    outline: none;
+}
+footer .form-group input:focus{
+    outline: black;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.footer{
+    margin-top: 45px;
+    border-top: 1px solid gray;
+    font-size: 12px;
+    padding-top: 10px;
+}
